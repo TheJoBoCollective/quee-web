@@ -14,13 +14,25 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: white;
     --foreground: #ededed;
+    --primary-blue-500: #ACCDFF;
+    --orange-6: #F09819;
+    --red-6: #FF5858;
+    --violet-6:#3E0F46;
+    --violet-7: #110B23;
+    --text-primary: #1E1E1E;
   }
+}
+
+@layer base {
+  html, body {
+      overflow-x: hidden;
+    }
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
+  color: var(--text-primary);
   font-family: Arial, Helvetica, sans-serif;
 }
