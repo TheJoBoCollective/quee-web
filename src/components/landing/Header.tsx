@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <nav className="flex justify-between items-center">
-      <div>
+      <Link href="/">
         <Image
           className="drop-shadow-white"
           src="/logo.svg"
@@ -12,9 +13,9 @@ const Header = () => {
           width={130}
           height={64}
         />
-      </div>
+      </Link>
       <div>
-        <button className="bg-[#ACCDFF] px-9 py-[18px] rounded-xl">
+        <button className="bg-[#ACCDFF] px-9 py-[18px] font-medium rounded-xl">
           Get started
         </button>
       </div>

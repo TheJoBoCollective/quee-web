@@ -1,4 +1,5 @@
 import Header from "@/components/landing/Header";
+import Hero from "@/components/landing/Hero";
 
 export default function Home() {
   const gradient =
@@ -11,9 +12,14 @@ export default function Home() {
           style={{
             background: "url('/hero-bg.png')," + gradient,
           }}
-          className="w-full min-h-screen bg-center bg-no-repeat bg-contain pt-14 px-24"
+          className=""
         >
-          <Header />
+          <div className="w-full min-h-screen bg-center bg-no-repeat bg-contain pt-14 max-w-7xl mx-auto">
+            <Header />
+            <div className="pt-19">
+              <Hero />
+            </div>
+          </div>
         </section>
       </main>
     </div>
