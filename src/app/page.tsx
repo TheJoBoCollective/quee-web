@@ -1,5 +1,6 @@
 import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
+import About from "@/components/landing/About";
 
 export default function Home() {
   const gradient =
@@ -14,13 +15,14 @@ export default function Home() {
           }}
           className=""
         >
-          <div className="w-full min-h-screen bg-center bg-no-repeat bg-contain pt-14 max-w-7xl mx-auto">
+          <div className="min-h-screen bg-center bg-no-repeat bg-contain pt-14 container mx-auto xl:max-w-[1280px] 2xl:max-w-[1440px]">
             <Header />
             <div className="pt-19">
               <Hero />
             </div>
           </div>
         </section>
+        <About />
       </main>
     </div>
   );

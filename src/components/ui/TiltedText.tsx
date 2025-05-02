@@ -18,7 +18,7 @@ export function TiltedText({
   return (
     <motion.span
       className={cn(
-        "inline-block px-4 py-1 mx-1 rounded-md font-semibold",
+        "inline-block px-6 py-3 mx-1 rounded-3xl font-medium",
         color,
         className
       )}
@@ -27,7 +27,7 @@ export function TiltedText({
         display: "inline-block",
       }}
       whileHover={{ scale: 1.05 }}
-      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+      transition={{ type: "spring", stiffness: 400, damping: 10, }}
     >
       {text}
     </motion.span>
