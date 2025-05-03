@@ -1,6 +1,7 @@
 import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
 import About from "@/components/landing/About";
+import Footer from "@/components/landing/Footer";
 
 export default function Home() {
   const gradient =
@@ -24,6 +25,7 @@ export default function Home() {
         </section>
         <About />
       </main>
+      <Footer />
     </div>
   );
 }
