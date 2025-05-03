@@ -1,6 +1,7 @@
 import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
 import About from "@/components/landing/About";
+import Faqs from "@/components/landing/Faqs";
 import Footer from "@/components/landing/Footer";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
           </div>
         </section>
         <About />
+        <Faqs />
       </main>
       <Footer />
     </div>
