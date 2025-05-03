@@ -2,6 +2,7 @@ import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
 import About from "@/components/landing/About";
 import Faqs from "@/components/landing/Faqs";
+import HowItWorks from "@/components/landing/HowItWorks";
 import Footer from "@/components/landing/Footer";
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
           </div>
         </section>
         <About />
+        <HowItWorks />
         <Faqs />
       </main>
       <Footer />
