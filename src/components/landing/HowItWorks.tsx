@@ -1,8 +1,10 @@
 import React from 'react'
+import ToggleButton from '@/components/ui/ToggleButton';
 
 const HowItWorks = () => {
   return (
     <section className="bg-white flex flex-col items-center py-30 px-24 min-h-screen">
+      <ToggleButton options={["DJ something ", "User something"]} className='mb-15' />
       <h3 className="text-5xl font-medium pb-6">
         Turn your setlist into a paycheck
       </h3>
