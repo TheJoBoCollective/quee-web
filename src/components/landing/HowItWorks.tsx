@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 import ToggleButton from "@/components/ui/ToggleButton";
 
@@ -36,25 +37,35 @@ const UserHowItWorks = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 min-h-[602px]">
         <div className="bg-blue-100 rounded-3xl p-8 border border-blue-300">
           <div className="h-full flex flex-col justify-between">
-            <div>
-              <div className="w-12 h-12 bg-orange-400 rounded-lg mb-8"></div>
-
-              <div className="h-24 w-3/4"></div>
+            <div className="w-3/5">
+              <Image
+                src="/favicon.png"
+                width={42}
+                height={42}
+                className="w-10 h-10 mb-8"
+                alt="Quee logo"
+              />
+              <p className="w-full text-4xl">Send out a song request!</p>
             </div>
 
             <div className="mt-auto">
-              <div className="w-32 h-12 border border-orange-400 rounded-full"></div>
+              <div className="w-32 h-12 border border-orange-400 rounded-full mb-15"></div>
             </div>
           </div>
         </div>
 
         <div className="grid grid-cols-1 gap-6">
           <div className="bg-blue-100 rounded-3xl p-8">
-            <div className="h-full"></div>
+            <div className="h-full">
+              {" "}
+              <p className="text-3xl">Send a tip to the DJ</p>
+            </div>
           </div>
 
           <div className="bg-blue-100 rounded-3xl p-8">
-            <div className="h-full"></div>
+            <div className="h-full">
+              <p className="text-3xl">Find any track</p>
+            </div>
           </div>
         </div>
       </div>
@@ -67,29 +78,40 @@ const DJHowItWorks = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 min-h-[602px]">
         <div className="bg-blue-100 rounded-3xl px-13 pt-13 border border-blue-300">
           <div className="h-full flex flex-col justify-between">
-            <div>
-              <div className="w-12 h-12 bg-orange-400 rounded-lg mb-8"></div>
-
-              <div className="h-24 w-3/4"></div>
+            <div className="w-3/5">
+              <Image
+                src="/favicon.png"
+                width={42}
+                height={42}
+                className="w-10 h-10 mb-8"
+                alt="Quee logo"
+              />
+              <p className="w-full text-4xl">No more awkward requests</p>
             </div>
 
             <div className="mt-auto">
-              <div className="w-32 h-12 border border-orange-400 rounded-full"></div>
+              <div className="w-32 h-12 border border-orange-400 rounded-full mb-15"></div>
             </div>
           </div>
         </div>
 
         <div className="grid grid-cols-2 gap-6">
           <div className="bg-blue-100 rounded-3xl p-8 row-span-2">
-            <div className="h-full"></div>
+            <div className="h-full">
+              <p className="text-3xl">Real-time control.</p>
+            </div>
           </div>
 
           <div className="bg-blue-100 rounded-3xl p-8">
-            <div className="h-full"></div>
+            <div className="h-full">
+              <p className="text-3xl"> Manage Live Song Requests</p>
+            </div>
           </div>
 
           <div className="bg-blue-100 rounded-3xl p-8">
-            <div className="h-full"></div>
+            <div className="h-full">
+              <p className="text-3xl">Monetize sets</p>
+            </div>
           </div>
         </div>
       </div>
