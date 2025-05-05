@@ -8,7 +8,7 @@ const Footer = () => {
     "linear-gradient(108.13deg, rgba(255, 88, 88, 0.5) 0%, rgba(240, 152, 25, 0.5) 100%)";
 
   return (
-    <footer className="bg-[#110B23] min-h-screen px-24 pt-30">
+    <footer className="bg-[#110B23] min-h-screen px-24 py-30">
       <div className="flex items-center bg-white max-w-6xl mx-auto rounded-3xl pl-20 py-6 mb-20">
         <div className="max-w-xs mr-19">
           <h1 className="text-[#1E1E1E] font-medium text-6xl pb-6">
