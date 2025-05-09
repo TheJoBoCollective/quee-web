@@ -45,7 +45,9 @@ const UserHowItWorks = () => {
                 className="w-10 h-10 mb-8"
                 alt="Quee logo"
               />
-              <p className="w-full text-4xl">Send out a song request!</p>
+              <p className="w-full text-4xl">
+                Send out a song <span> request!</span>
+              </p>
             </div>
 
             <div className="mt-auto">
@@ -57,14 +59,17 @@ const UserHowItWorks = () => {
         <div className="grid grid-cols-1 gap-6">
           <div className="bg-blue-100 rounded-3xl p-8">
             <div className="h-full">
-              {" "}
-              <p className="text-3xl">Send a tip to the DJ</p>
+              <p className="text-3xl">
+                <span>Send a tip</span> to the DJ
+              </p>
             </div>
           </div>
 
           <div className="bg-blue-100 rounded-3xl p-8">
             <div className="h-full">
-              <p className="text-3xl">Find any track</p>
+              <p className="text-3xl">
+                Find any <span>track</span>
+              </p>
             </div>
           </div>
         </div>
@@ -98,19 +103,25 @@ const DJHowItWorks = () => {
         <div className="grid grid-cols-2 gap-6">
           <div className="bg-blue-100 rounded-3xl p-8 row-span-2">
             <div className="h-full">
-              <p className="text-3xl">Real-time control.</p>
+              <p className="text-3xl">
+                <span>Real</span>-time control.
+              </p>
             </div>
           </div>
 
           <div className="bg-blue-100 rounded-3xl p-8">
             <div className="h-full">
-              <p className="text-3xl"> Manage Live Song Requests</p>
+              <p className="text-3xl">
+                Manage Live Song <span>Requests</span>
+              </p>
             </div>
           </div>
 
           <div className="bg-blue-100 rounded-3xl p-8">
             <div className="h-full">
-              <p className="text-3xl">Monetize sets</p>
+              <p className="text-3xl">
+                <span>Monetize</span> sets
+              </p>
             </div>
           </div>
         </div>
