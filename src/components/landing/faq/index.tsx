@@ -20,7 +20,7 @@ const FaqItem = ({ question, answer, isOpen, onClick }: FaqItemProps) => (
       alt=""
     /> */}
     <div className="flex w-full flex-col">
-      <h3 className="text-2xl font-medium tracking-tight">{question}</h3>
+      <h3 className="text-xl md:text-2xl font-medium tracking-tight">{question}</h3>
       <div
         className={`w-full overflow-clip transition-all duration-300 transition-discrete  ${
           isOpen ? "max-h-24 mt-6" : "max-h-0"

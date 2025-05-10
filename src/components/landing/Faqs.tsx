@@ -39,9 +39,9 @@ const Faqs = () => {
   ];
 
   return (
-    <section className="bg-white flex flex-col items-center py-30 px-24 min-h-screen mx-auto xl:max-w-[1280px] 2xl:max-w-[1440px]">
-      <h3 className="text-5xl font-medium pb-6">You ask, we answer</h3>
-      <p className="text-xl pb-7 max-w-xl text-center">
+    <section className="bg-white flex flex-col items-center px-6 py-8 md:py-30 md:px-24 md:min-h-screen mx-auto xl:max-w-[1280px] 2xl:max-w-[1440px]">
+      <h3 className="text-4xl md:text-5xl text-center font-medium pb-6">You ask, we answer</h3>
+      <p className="text-lg md:text-xl pb-7 max-w-xl text-center">
         Got questions? We’ve got answers. From song requests to payouts, here’s
         everything you need to know to make the most of Quee.
       </p>
