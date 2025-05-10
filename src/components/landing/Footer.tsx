@@ -8,9 +8,9 @@ const Footer = () => {
     "linear-gradient(108.13deg, rgba(255, 88, 88, 0.5) 0%, rgba(240, 152, 25, 0.5) 100%)";
 
   return (
-    <footer className="bg-[#110B23] min-h-screen px-24 py-30">
-      <div className="flex items-center bg-white max-w-6xl mx-auto rounded-3xl pl-20 py-6 mb-20">
-        <div className="max-w-xs mr-19">
+    <footer className="bg-[#110B23] md:min-h-screen px-6 md:px-24 py-10 md:py-30">
+      <div className="flex items-center bg-white max-w-6xl mx-auto rounded-3xl pl-4 md:pl-20 py-6 mb-20">
+        <div className="md:max-w-xs mr-19">
           <h1 className="text-[#1E1E1E] font-medium text-6xl pb-6">
             Tap in <br />& Turn up!
           </h1>
@@ -37,7 +37,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <Vinyl />
+        <Vinyl className="hidden md:block" />
       </div>
       <section className="flex justify-between items-center border-t border-[#9F77EC4D] max-w-5xl mx-auto pt-20">
         <div className="flex items-center justify-center gap-8 border border-[#9F77EC4D] rounded-3xl bg-[#21183B]  text-white max-w-2xl py-8 px-13">

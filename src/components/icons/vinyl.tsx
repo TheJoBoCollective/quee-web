@@ -1,12 +1,15 @@
 import React from "react";
 
-const Vinyl = () => {
+const Vinyl = (
+  props: React.SVGProps<SVGSVGElement> & { className?: string }
+) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="460"
       height="460"
       fill="none"
+      {...props}
     >
       <path
         fill="#2B2441"
