@@ -18,7 +18,7 @@ export default function Home() {
           }}
           className=""
         >
-          <div className="min-h-screen bg-center bg-no-repeat bg-contain pt-14 container mx-auto xl:max-w-[1280px] 2xl:max-w-[1440px]">
+          <div className="md:min-h-screen bg-center bg-no-repeat bg-contain pt-5 md:pt-14 container mx-auto xl:max-w-[1280px] 2xl:max-w-[1440px]">
             <Header />
             <div className="pt-19">
               <Hero />

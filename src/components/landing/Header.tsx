@@ -14,8 +14,8 @@ const Header = () => {
           height={64}
         />
       </Link>
-      <div>
-        <button className="bg-[#ACCDFF] px-9 py-[18px] font-medium rounded-xl">
+      <div className="mr-2 md:mr-0">
+        <button className="bg-[#ACCDFF] px-4 py-3 md:px-9 md:py-[18px] font-medium rounded-xl">
           Get started
         </button>
       </div>

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const About = ()  => {
   return (
     <section className="bg-[#141029] min-h-[80vh] w-full flex items-center justify-center overflow-hidden">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto md:px-4">
         <motion.div
           className="flex flex-col items-center text-center text-white text-2xl md:text-3xl lg:text-4xl font-medium"
           initial={{ opacity: 0 }}
