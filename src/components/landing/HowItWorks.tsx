@@ -6,7 +6,7 @@ import ToggleButton from "@/components/ui/ToggleButton";
 const HowItWorks = () => {
   const [currentView, setCurrentView] = useState(0);
   return (
-    <div className="bg-white flex flex-col items-center py-30 px-24 min-h-screen mx-auto xl:max-w-[1280px] 2xl:max-w-[1440px]">
+    <div className="bg-white flex flex-col items-center py-8 md:py-30 px-6 md:px-24 md:min-h-screen mx-auto xl:max-w-[1280px] 2xl:max-w-[1440px]">
       <ToggleButton
         options={["DJ something ", "User something"]}
         className="mb-15"
@@ -35,9 +35,9 @@ const UserHowItWorks = () => {
   return (
     <section className="container mx-auto h-full">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="bg-blue-200 rounded-3xl px-13 pt-13 border border-blue-300">
+        <div className="bg-blue-200 rounded-3xl px-6 md:px-13 pt-13 border border-blue-300">
           <div className="h-full flex flex-col justify-between">
-            <div className="w-3/5">
+            <div className="md:w-3/5">
               <Image
                 src="/favicon.png"
                 width={42}
@@ -45,15 +45,15 @@ const UserHowItWorks = () => {
                 className="w-10 h-10 mb-8"
                 alt="Quee logo"
               />
-              <p className="w-full text-4xl">
-                <span className="text-[#1E1E1E]/60">Send out a song</span>{" "}
-                <br />
+              <p className="w-full text-2xl md:text-4xl mb-4 md:mb-0">
+                <span className="text-[#1E1E1E]/60">Send out a song </span>
+                <br className="hidden md:block" />
                 request!
               </p>
             </div>
 
-            <div className="mt-auto flex justify-between items-end">
-              <button className="px-6 py-4 mb-15 border border-orange-400 rounded-full cursor-pointer">
+            <div className="mt-auto flex flex-col md:flex-row md:justify-between md:items-end">
+              <button className="px-6 py-4 mb-5 md:mb-15 border border-orange-400 rounded-full cursor-pointer">
                 Get the app
               </button>
               <Image
@@ -68,8 +68,8 @@ const UserHowItWorks = () => {
         </div>
 
         <div className="grid grid-cols-1 grid-rows-2 gap-6">
-          <div className="bg-blue-200 rounded-3xl px-10 pb-10">
-            <div className="flex h-full">
+          <div className="bg-blue-200 rounded-3xl px-6 md:px-10 pb-10">
+            <div className="flex flex-col md:flex-row h-full">
               <Image
                 src="/user-tip.png"
                 width={312}
@@ -77,19 +77,19 @@ const UserHowItWorks = () => {
                 className=""
                 alt=""
               />
-              <div className="flex items-end pl-10">
+              <div className="flex items-end mt-5 md:mt-0 md:pl-10">
                 <p className="text-3xl">
                   <span className="text-[#1E1E1E]/60">Send a tip</span>
-                  <br /> to the DJ
+                  <br className="hidden md:block" /> to the DJ
                 </p>
               </div>
             </div>
           </div>
 
           <div className="bg-blue-200 rounded-3xl">
-            <div className="h-full flex items-end justify-between">
-              <p className="text-3xl pl-10 pb-10">
-                Find <br />
+            <div className="h-full flex flex-col md:flex-row md:items-end justify-between">
+              <p className="text-3xl pl-6 md:pl-10 pr-10 md:pr-0 pb-10 pt-10 md:pt-0 text-center md:text-left">
+                Find <br className="hidden md:block" />
                 any<span className="text-[#1E1E1E]/60"> track</span>
               </p>
               <Image
@@ -110,9 +110,9 @@ const DJHowItWorks = () => {
   return (
     <section className="container mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="bg-blue-200 rounded-3xl px-13 pt-13 border border-blue-300">
+        <div className="bg-blue-200 rounded-3xl px-6 md:px-13 pt-13 border border-blue-300">
           <div className="h-full flex flex-col justify-between">
-            <div className="w-3/5">
+            <div className="md:w-3/5">
               <Image
                 src="/favicon.png"
                 width={42}
@@ -120,11 +120,13 @@ const DJHowItWorks = () => {
                 className="w-10 h-10 mb-8"
                 alt="Quee logo"
               />
-              <p className="w-full text-4xl">No more awkward requests</p>
+              <p className="w-full text-2xl md:text-4xl mb-4 md:mb-0">
+                No more awkward requests
+              </p>
             </div>
 
-            <div className="mt-auto flex justify-between items-end">
-              <button className="px-6 py-4 mb-15 border border-orange-400 rounded-full cursor-pointer">
+            <div className="mt-auto flex flex-col md:flex-row md:justify-between md:items-end">
+              <button className="px-6 py-4 mb-5 md:mb-15 border border-orange-400 rounded-full cursor-pointer">
                 Get the app
               </button>
               <Image
@@ -138,7 +140,7 @@ const DJHowItWorks = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-blue-200 rounded-3xl row-span-2">
             <div className="h-full flex flex-col justify-between">
               <Image
@@ -159,8 +161,8 @@ const DJHowItWorks = () => {
               <p className="text-3xl w-40">
                 Manage Live Song
                 <span className="text-[#1E1E1E]/60">
-                  <br />
-                  Requests
+                  <br className="hidden md:block" />
+                   Requests
                 </span>
               </p>
             </div>
@@ -179,10 +181,10 @@ const DJHowItWorks = () => {
 
             <p className="text-3xl pb-10 px-10">
               <span className="text-[#1E1E1E]/60">
-                Monetize
-                <br />
+                Monetize  
+                <br className="hidden md:block" />
               </span>
-              sets
+                sets
             </p>
           </div>
         </div>

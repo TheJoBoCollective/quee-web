@@ -35,7 +35,7 @@ export default function ToggleButton({
           key={index}
           onClick={() => handleSelect(index)}
           className={cn(
-            "px-6 py-3 text-2xl cursor-pointer font-medium text-[#1E1E1E] transition-all duration-200 rounded-full",
+            "px-6 py-3 text-md md:text-2xl cursor-pointer font-medium text-[#1E1E1E] transition-all duration-200 rounded-full",
             selectedIndex === index ? "bg-[#ACCDFF]" : "bg-transparent"
           )}
         >
