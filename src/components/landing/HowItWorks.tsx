@@ -46,7 +46,8 @@ const UserHowItWorks = () => {
                 alt="Quee logo"
               />
               <p className="w-full text-4xl">
-                Send out a song <span> request!</span>
+                Send out a song
+                <span className="text-[#1E1E1E]/60"> request!</span>
               </p>
             </div>
 
@@ -60,7 +61,7 @@ const UserHowItWorks = () => {
           <div className="bg-blue-100 rounded-3xl p-8">
             <div className="h-full">
               <p className="text-3xl">
-                <span>Send a tip</span> to the DJ
+                <span className="text-[#1E1E1E]/60">Send a tip</span> to the DJ
               </p>
             </div>
           </div>
@@ -68,7 +69,7 @@ const UserHowItWorks = () => {
           <div className="bg-blue-100 rounded-3xl p-8">
             <div className="h-full">
               <p className="text-3xl">
-                Find any <span>track</span>
+                Find any <span className="text-[#1E1E1E]/60">track</span>
               </p>
             </div>
           </div>
@@ -81,7 +82,7 @@ const DJHowItWorks = () => {
   return (
     <section className="container mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 min-h-[602px]">
-        <div className="bg-blue-100 rounded-3xl px-13 pt-13 border border-blue-300">
+        <div className="bg-blue-200 rounded-3xl px-13 pt-13 border border-blue-300">
           <div className="h-full flex flex-col justify-between">
             <div className="w-3/5">
               <Image
@@ -94,33 +95,65 @@ const DJHowItWorks = () => {
               <p className="w-full text-4xl">No more awkward requests</p>
             </div>
 
-            <div className="mt-auto">
-              <div className="w-32 h-12 border border-orange-400 rounded-full mb-15"></div>
+            <div className="mt-auto flex justify-between items-end">
+              <div className="w-32 h-12 mb-15 border border-orange-400 rounded-full"></div>
+              <Image
+                src="/dj-request.png"
+                width={297}
+                height={615}
+                className=""
+                alt="Receive song requests from users"
+              />
             </div>
           </div>
         </div>
 
         <div className="grid grid-cols-2 gap-6">
-          <div className="bg-blue-100 rounded-3xl p-8 row-span-2">
-            <div className="h-full">
-              <p className="text-3xl">
-                <span>Real</span>-time control.
+          <div className="bg-blue-200 rounded-3xl row-span-2">
+            <div className="h-full flex flex-col justify-between">
+              <Image
+                src="/dj-accept-request.png"
+                width={307}
+                height={646}
+                className=" pr-9"
+                alt="have fun with your audience"
+              />
+              <p className="text-3xl p-10">
+                <span className="text-[#1E1E1E]/60">Real</span>-time control.
               </p>
             </div>
           </div>
 
-          <div className="bg-blue-100 rounded-3xl p-8">
+          <div className="bg-blue-200 rounded-3xl p-10">
             <div className="h-full">
-              <p className="text-3xl">
-                Manage Live Song <span>Requests</span>
+              <p className="text-3xl w-40">
+                Manage Live Song
+                <span className="text-[#1E1E1E]/60">
+                  <br />
+                  Requests
+                </span>
               </p>
             </div>
           </div>
 
-          <div className="bg-blue-100 rounded-3xl p-8">
+          <div className="bg-blue-200 rounded-3xl">
             <div className="h-full">
-              <p className="text-3xl">
-                <span>Monetize</span> sets
+              <div className="flex justify-end">
+                <Image
+                  src="/dj-monetize.png"
+                  width={182}
+                  height={217}
+                  className=""
+                  alt="Monetize your set"
+                />
+              </div>
+
+              <p className="text-3xl p-10">
+                <span className="text-[#1E1E1E]/60">
+                  Monetize
+                  <br />
+                </span>
+                sets
               </p>
             </div>
           </div>
