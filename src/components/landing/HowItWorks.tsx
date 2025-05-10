@@ -6,7 +6,7 @@ import ToggleButton from "@/components/ui/ToggleButton";
 const HowItWorks = () => {
   const [currentView, setCurrentView] = useState(0);
   return (
-    <div className="bg-white flex flex-col items-center py-30 px-24 min-h-screen">
+    <div className="bg-white flex flex-col items-center py-30 px-24 min-h-screen mx-auto xl:max-w-[1280px] 2xl:max-w-[1440px]">
       <ToggleButton
         options={["DJ something ", "User something"]}
         className="mb-15"
@@ -88,14 +88,14 @@ const UserHowItWorks = () => {
 
           <div className="bg-blue-200 rounded-3xl">
             <div className="h-full flex items-end justify-between">
-              <p className="text-3xl px-10 pb-10">
+              <p className="text-3xl pl-10 pb-10">
                 Find <br />
                 any<span className="text-[#1E1E1E]/60"> track</span>
               </p>
               <Image
                 src="/user-find-track.png"
-                width={312}
-                height={373}
+                width={360}
+                height={342}
                 className=""
                 alt=""
               />

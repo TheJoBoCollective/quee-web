@@ -39,7 +39,7 @@ const Faqs = () => {
   ];
 
   return (
-    <section className="bg-white flex flex-col items-center py-30 px-24 min-h-screen">
+    <section className="bg-white flex flex-col items-center py-30 px-24 min-h-screen mx-auto xl:max-w-[1280px] 2xl:max-w-[1440px]">
       <h3 className="text-5xl font-medium pb-6">You ask, we answer</h3>
       <p className="text-xl pb-7 max-w-xl text-center">
         Got questions? We’ve got answers. From song requests to payouts, here’s
