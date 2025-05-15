@@ -39,8 +39,8 @@ const Footer = () => {
         </div>
         <Vinyl className="hidden md:block" />
       </div>
-      <section className="flex justify-between items-center border-t border-[#9F77EC4D] max-w-5xl mx-auto pt-20">
-        <div className="flex items-center justify-center gap-8 border border-[#9F77EC4D] rounded-3xl bg-[#21183B]  text-white max-w-2xl py-8 px-13">
+      <section className="flex flex-col md:flex-row justify-between items-center border-t border-[#9F77EC4D] md:max-w-5xl mx-auto pt-20">
+        <div className="flex flex-col md:flex-row items-center text-center md:text-left justify-center gap-8 border border-[#9F77EC4D] rounded-3xl bg-[#21183B] text-white md:max-w-2xl py-8 px-10 mb-5 md:mb-0">
           <Image
             src="/favicon.png"
             width={64}
